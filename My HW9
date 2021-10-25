@@ -1,0 +1,175 @@
+// Optional task:
+//     JS Tasks:
+//     1. Проверка на возраст
+// Создайте переменную, в которой будет указан возраст пользователя, соблюдая при этом следующие условия проверки:
+//     - если возраст больше 18 – на экран выводиться предложение: «Вам уже все можно»;
+// - если возраст равен 18 – «Ура, Вам 18 лет!»;
+// - если меньше 18 – «Вы еще слишком молоды».
+
+let Age = 20
+if (Age > 18) {
+    console.log('Вам уже все можно')
+}
+else if (Age === 18) {
+    console.log('Ура, Вам 18 лет!')
+}
+else {
+    console.log('Вы еще слишком молоды')
+}
+
+// 2. Небольшой калькулятор
+// Создайте команды для последовательного ввода двух произвольных чисел и выбора действий
+// с ними в зависимости от выбранной команды (1-3):
+// - Сумма.
+// - Разница.
+// - Нет действия.
+
+const readline = require('readline-sync'); // нужно установить модуль 'readline-sync'
+
+let x = Number(readline.question('First number? '));
+let y = Number(readline.question('Second number? '));
+let d = readline.question('Operation? ');
+
+if (d === '+') {
+    console.log('Сумма чисел ', x+y);
+}
+else if (d === '-') {
+    console.log('Разность чисел ', x - y);
+}
+else {
+    console.log('Нет действия');
+}
+
+// 3. Определение дня недели
+// Введите число от 1 до 7, которое будет соответствовать дню недели.
+//     Например: при вводе числа 1 на экране будет выводиться «Понедельник» и т. д.
+//     Сделайте подобную проверку при помощи операторов switch case case и if-else.
+
+// Оператор if-else.
+
+const readline = require('readline-sync'); // нужно установить модуль 'readline-sync'
+
+let x = Number(readline.question('Day number?'));
+
+if (x === 1) {
+    console.log('Понедельник');
+}   else if (x === 2) {
+    console.log('Вторник');
+}   else if (x === 3) {
+    console.log('Среда');
+    }   else if (x === 4) {
+    console.log('Четверг');
+}   else if (x === 5) {
+    console.log('Пятница');
+}   else if (x === 6) {
+    console.log('Суббота');
+}   else if (x === 7){
+    console.log('Воскресенье');
+}   else{
+    console.log('В неделе семь дней, вы ошиблись, введите повторно')
+}
+
+// Оператор switch case
+
+const readline = require('readline-sync');
+
+let x = Number(readline.question('Day number?'));
+
+switch (x) {
+    case 1:
+        console.log('Понедельник');
+        break;
+    case 2:
+        console.log('Вторник');
+        break;
+    case 3:
+        console.log('Среда');
+        break;
+    case 4:
+        console.log('Четверг');
+        break;
+    case 5:
+        console.log('Пятница');
+        break;
+    case 6:
+        console.log('Суббота');
+        break;
+    case 7:
+        console.log('Воскресенье');
+        break;
+    default:
+        console.log('В неделе семь дней, вы ошиблись, введите повторно')
+}
+
+// 4. Проверка переменных
+// Проверить две переменные на их четность. Если обе четные, то выдается значение true, иначе false.
+
+function twoEven (x, y){
+    return console.log(x % 2 === 0  && y % 2 === 0 );
+}
+twoEven (6, 5)
+
+
+// 5. Сравнение строк
+// Напишите программу, которая будет сравнивать количество символов в двух произвольных строках,
+// введенных пользователем.
+//         Пример:
+// Первая строка: Обычная строка
+// Вторая строка: Уже другая строка
+// результат: Обычная строка меньше чем Уже другая строка
+
+
+function compare_str (a, b) {
+    return a.length > b.length ?
+        console.log('Длина строки a = ' + a.length + ' больше длины строки b = ' + b.length) :
+        console.log('Длина строки b = ' + b.length + ' больше длины строки a = ' + a.length)
+}
+compare_str ('fghjkl', 'qwertyuiop')
+
+ RuslanStepaniuk_JS/Homework_9_CW.js 
+// 1. Sum of odd numbers
+// https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/train/javascript
+
+function rowSumOddNumbers(n) {
+    let start = (n * n) - (n - 1);
+    let sum = 0;
+    for (let i = 0; i < n; i++) {
+        sum += start + i * 2;
+    }
+    return sum;
+}
+
+// 2. Count Odd Numbers below n
+// https://www.codewars.com/kata/59342039eb450e39970000a6/train/javascript
+
+function oddCount(n){
+    return Math.floor(n/2)
+}
+
+// 3. Array plus array
+// https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/javascript
+
+function arrayPlusArray(arr1, arr2) {
+    let arr3 = arr1.concat(arr2);
+    sum = 0;
+    for (var i = 0; i < arr3.length; i++) {
+        sum += arr3[i];
+    }
+    return sum;
+}
+
+// 4. Grasshopper - Grade book
+// https://www.codewars.com/kata/55cbd4ba903825f7970000f5/train/javascript
+
+function getGrade (s1, s2, s3) {
+    s = (s1 + s2 + s3)/3;
+    return s < 60 ? "F" : s < 70 ? "D" : s < 80 ? "C" : s < 90 ? "B" : "A"
+}
+
+// 5. Beginner Series #4 Cockroach
+// https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6/train/javascript
+
+function cockroachSpeed(s){
+    s=Math.floor(s*100000/3600);
+    return s;
+}

@@ -1,0 +1,46 @@
+// 1. Sum of odd numbers
+// https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/train/javascript
+
+function rowSumOddNumbers(n) {
+    let start = (n * n) - (n - 1);
+    let sum = 0;
+    for (let i = 0; i < n; i++) {
+        sum += start + i * 2;
+    }
+    return sum;
+}
+
+// 2. Count Odd Numbers below n
+// https://www.codewars.com/kata/59342039eb450e39970000a6/train/javascript
+
+function oddCount(n){
+    return Math.floor(n/2)
+}
+
+// 3. Array plus array
+// https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/javascript
+
+function arrayPlusArray(arr1, arr2) {
+    let arr3 = arr1.concat(arr2);
+    sum = 0;
+    for (var i = 0; i < arr3.length; i++) {
+        sum += arr3[i];
+    }
+    return sum;
+}
+
+// 4. Grasshopper - Grade book
+// https://www.codewars.com/kata/55cbd4ba903825f7970000f5/train/javascript
+
+function getGrade (s1, s2, s3) {
+    s = (s1 + s2 + s3)/3;
+    return s < 60 ? "F" : s < 70 ? "D" : s < 80 ? "C" : s < 90 ? "B" : "A"
+}
+
+// 5. Beginner Series #4 Cockroach
+// https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6/train/javascript
+
+function cockroachSpeed(s){
+    s=Math.floor(s*100000/3600);
+    return s;
+}

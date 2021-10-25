@@ -1,0 +1,32 @@
+function sum() {
+    var n1 = document.getElementById("num1").value;
+    n1 = parseFloat(n1);
+    var n2 = document.getElementById("num2").value;
+    n2 = parseFloat(n2);
+    var res = Math.round((n1 + n2) * 1000) / 1000;
+    document.getElementById("result").innerHTML = `Результат: ${res}`;
+}
+function difference() {
+    var n1 = document.getElementById("num1").value;
+    n1 = parseFloat(n1);
+    var n2 = document.getElementById("num2").value;
+    n2 = parseFloat(n2);
+    var res = Math.round((n1 - n2) * 1000) / 1000;
+    document.getElementById("result").innerHTML = `Результат: ${res}`;
+}
+function multiplication() {
+    var n1 = document.getElementById("num1").value;
+    n1 = parseFloat(n1);
+    var n2 = document.getElementById("num2").value;
+    n2 = parseFloat(n2);
+    var res = Math.round(n1 * n2 * 1000) / 1000;
+    document.getElementById("result").innerHTML = `Результат: ${res}`;
+}
+function division() {
+    var n1 = document.getElementById("num1").value;
+    n1 = parseFloat(n1);
+    var n2 = document.getElementById("num2").value;
+    n2 = parseFloat(n2);
+    var res = Math.round(n1 / n2 * 1000) / 1000;
+    document.getElementById("result").innerHTML = `Результат: ${res}`;
+}

@@ -1,0 +1,13 @@
+function length() {
+    var str1 = document.getElementById("str1").value;
+    var str2 = document.getElementById("str2").value;
+    if (str1.length > str2.length) {
+        document.getElementById("result").innerHTML = `Первая строка длиннее второй`
+    }
+    else if (str1.length < str2.length) {
+        document.getElementById("result").innerHTML = `Вторая строка длиннее первой`
+    }
+    else {
+        document.getElementById("result").innerHTML = `Строки равны по длине`
+    }
+}

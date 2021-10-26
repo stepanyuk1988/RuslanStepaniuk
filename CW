@@ -1,0 +1,296 @@
+#updating test file_EvgenyBessonov
+def test_sum(a, b):
+    return (a+b)
+
+# test function
+def test(a, b):
+    return int(a + b)
+
+
+print(test(12, 55))
+# AleksandrKuzhelev
+print(test(3, 2))
+
+
+# Osadcaha_n
+def some_test(a, b, c):
+    return a * b * c
+
+
+res = some_test(2, 4, 6)
+print(res)
+
+# RadchenkoS_cw_py
+print(test(10, 90))
+
+# AleksandrKuzhelev
+print(test(3, 2))
+
+
+# Inna - 8kyu/Multiply: https://www.codewars.com/kata/50654ddff44f800200000004
+def multiply(a, b):
+    return a * b
+
+
+print(multiply(125, 35))
+
+
+# Vitaly
+def my_func(a, b):
+    print(a + " \n" + b)
+
+
+my_func("Vitaly", "Pak")
+
+
+# Mariya
+def func1(x, y, z=10):
+    return x / y / z
+
+
+print(func1(150, 25, 10))
+print(func1(150, 25))
+
+# nShakiro
+print(test(10, 7))
+
+
+def mess():
+    print("This is new message")
+
+
+# Regina_Test
+def my_function(x):
+    return 5 * x
+
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+
+# Pavlov Alexey
+print("Hello everybody!")
+
+mess()
+
+# NinaB
+n = int(input())
+[print(i ** 2) for i in range(n)]
+
+# Sv_Kolesnikova
+print('Enter first number')
+a = int(input())
+print('Enter operator')
+c = str(input())
+print('Enter second number')
+b = int(input())
+
+if c == '+':
+    print(a + b)
+elif c == '-':
+    print(a - b)
+elif c == '*':
+    print(a * b)
+elif c == '/':
+    print(a / b)
+elif c == '%':
+    print(a % b)
+
+# Aziz
+print((lambda x, y: x + y)(9, 4))
+print((lambda x, y: x + y)('May ', '5.11.2020'))
+
+
+# Madina
+def decorator(func):
+    def wrapper():
+        print("Madina")
+        func()
+        print("5.23.2020")
+
+    return wrapper
+
+
+def decorator2(func2):
+    def wrapper2():
+        print("12.13.1992")
+        func2()
+        print("May")
+
+    return wrapper2
+
+
+@decorator
+@decorator2
+def print_text():
+    print("This is one more line")
+
+
+print_text()
+
+# Alex Katolik
+print("test commit and PR")
+
+# Pavel Bulgakov
+print("Trying to update 'test.py' file with my code")
+
+
+# Daulet
+# Calculate average
+
+def find_average(arr):
+    return sum(arr) / len(arr)
+
+
+# EriksKaza
+def is_triangle(a, b, c):
+    return a + b > c and a + c > b and b + c > a
+
+
+# Sergey Begichev
+# https://www.codewars.com/kata/57a386117cb1f31890000039/train/python
+
+def parse_float(string):
+    try:
+        return float(string)
+    except:
+        return
+
+
+# Daulet
+# https://www.codewars.com/kata/56f6ad906b88de513f000d96/train/javascript
+# Do I get a bonus?
+
+def bonus_time(salary, bonus):
+    if bonus:
+        salary = salary * 10
+    x = str(salary)
+    return '$' + x
+
+
+# Tanya_Smt
+# https://www.codewars.com/kata/54ff3102c1bad923760001f3/python
+# Vowel Count
+def get_count(input_str):
+    return len(list(i for i in input_str if i in ('a', 'i', 'e', 'u', 'o')))
+
+
+# Olga_Saks
+# https://www.codewars.com/kata/5ab6538b379d20ad880000ab/solutions/python
+def area_or_perimeter(m, w):
+    return m * w if m == w else (m + w) * 2
+
+
+# Artur_Nech
+# Categorize New Member	https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa
+# def openOrSenior(data):
+
+def openOrSenior(data):
+    return ["Senior" if age >= 55 and handicap >= 8 else "Open" for
+            (age, handicap) in data]
+
+
+def openOrSenior(data):
+    res = []
+    for i in data:
+        if i[0] >= 55 and i[1] > 7:
+            res.append("Senior")
+        else:
+            res.append("Open")
+    return res
+  
+
+  
+  
+# I've approved this changes as Admin  
+  
+  
+  
+#####################
+# Natalia Z test hwqa7
+
+
+def testing(q, a):
+    return int(q + a)
+
+
+print(testing(2, 3))
+#######################
+
+#=======
+def add_five(num):
+    total = num + 5
+    return total
+  
+def make_negative(number):
+    return abs(number) * -1
+  
+# https://www.codewars.com/kata/587c2d08bb65b5e8040004fd/train/python
+
+def nba_extrap(ppg, mpg):
+    return round(48.0 / mpg * ppg, 1) if mpg > 0 else 0
+  
+# https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd
+
+def paperwork(n, m):
+    if n > 0 and m > 0:
+        return n * m
+    else:
+        return 0
+      
+# https://www.codewars.com/kata/5715eaedb436cf5606000381/train/python
+
+def positive_sum(arr):
+    return sum(x for x in arr if x > 0)
+  
+# https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/python
+
+def basic_op(operator, value1, value2):
+    if operator == '+':
+        return value1 + value2
+    if operator == '-':
+        return value1 - value2
+    if operator == '*':
+        return value1 * value2
+    if operator == '/':
+        return value1 / value2
+      
+# https://www.codewars.com/kata/54147087d5c2ebe4f1000805
+def _if(bool, func1, func2):
+    if bool:
+        func1()
+    else:
+        func2()
+        
+# https://www.codewars.com/kata/5875b200d520904a04000003/train/python
+
+def enough(cap, on, wait):
+    return max(0, wait - (cap - on))
+
+def abbrev_name(name):
+    return ".".join([w[0].upper() for w in name.split()])        
+
+
+while True:
+    try:
+      input_a = int(input("Enter number: "))
+      print('This is correct')
+      break
+    except ValueError:
+       print("It is not a number. Try again: ")
+
+# https://www.codewars.com/kata/57ee99a16c8df7b02d00045f
+def flatten_and_sort(array):
+    b = []
+    for y in array:
+        for x in y:
+            b.append(x)
+    return sorted(b)
+
+
+print('Hi, Team!')
+# Victor Kalininskiy: #6. Домашнее задание QA_GitHub_PR_Code review_Markdown, Interview, JS tasks:
+# Try to update "test.py" file with your code
+my_list = [5, 1, 8, 3, 7]
+print(8 in my_list)
+print(0 in my_list)

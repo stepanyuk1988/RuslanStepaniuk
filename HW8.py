@@ -1,7 +1,3 @@
-# I am using desktop version of ZenMate VPN for working with US sites without any errors in site locators
-# Highly recommend it for my Russian classmates
-# It costs approx. only 300-400 rubles per month, and can be used on any machine
-# Enjoy✌️
 import unittest
 from selenium import webdriver
 import time

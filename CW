@@ -267,7 +267,7 @@ def flatten_and_sort(array):
 
 
 print('Hi, Team!')
-# #6. Домашнее задание QA_GitHub_PR_Code review_Markdown, Interview, JS tasks:
+# #6. Домашнее задание
 # Try to update "test.py" file with your code
 my_list = [5, 1, 8, 3, 7]
 print(8 in my_list)
